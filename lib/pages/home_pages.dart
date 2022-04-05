@@ -29,7 +29,7 @@ class HomePage extends StatelessWidget {
                   child: CircularProgressIndicator(),
                 )
               : GridView.builder(
-                //apiController.film.length
+                  //apiController.film.length
                   itemCount: 10,
                   itemBuilder: (context, i) {
                     final films = apiController.film[i];
@@ -47,6 +47,10 @@ class HomePage extends StatelessWidget {
                             width: double.infinity,
                             height: double.infinity,
                             decoration: BoxDecoration(
+                                image: const DecorationImage(
+                                  fit: BoxFit.cover,
+                                    image: NetworkImage(
+                                        'https://i.giphy.com/media/oKLNQQ6OIeSU8/giphy.gif')),
                                 borderRadius: BorderRadius.circular(20),
                                 color: Colors.green),
                             child: Stack(
@@ -67,13 +71,13 @@ class HomePage extends StatelessWidget {
                             ),
                           ),
                           Positioned(
-                            right: 10,
+                            left: 10,
                             bottom: -10,
                             child: FadeInImage(
                               fit: BoxFit.contain,
                               width: 90,
                               height: 150,
-                              placeholder: const AssetImage(
+                              placeholder: const NetworkImage(
                                   'https://i.pinimg.com/originals/b5/71/95/b57195740555db2993f209e0b0ed9ae4.gif'),
                               image: NetworkImage(films.image!),
                             ),

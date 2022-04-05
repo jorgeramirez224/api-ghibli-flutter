@@ -21,11 +21,16 @@ class DatosApiPages extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                       fontSize: 50),
                 ),
+                alignment: Alignment.topLeft,
                 width: double.infinity,
                 height: 298,
                 decoration: const BoxDecoration(
+                  image: DecorationImage(
+                      fit: BoxFit.cover,
+                      image: NetworkImage(
+                          'https://data.whicdn.com/images/350711764/original.gif')),
                   borderRadius:
-                      BorderRadius.only(bottomLeft: Radius.circular(150)),
+                      BorderRadius.only(bottomLeft: Radius.circular(125)),
                   color: Colors.cyan,
                 ),
               ),
@@ -38,7 +43,7 @@ class DatosApiPages extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                       fontSize: 20),
                 ),
-                alignment: Alignment.topLeft,
+                alignment: Alignment.center,
               ),
               const SizedBox(height: 20),
               Container(
@@ -50,7 +55,7 @@ class DatosApiPages extends StatelessWidget {
                     fontSize: 20,
                   ),
                 ),
-                alignment: Alignment.topLeft,
+                alignment: Alignment.center,
               ),
               const SizedBox(height: 20),
               Container(
@@ -62,7 +67,7 @@ class DatosApiPages extends StatelessWidget {
                     fontSize: 20,
                   ),
                 ),
-                alignment: Alignment.topLeft,
+                alignment: Alignment.center,
               ),
               const SizedBox(height: 20),
               Container(
@@ -74,7 +79,7 @@ class DatosApiPages extends StatelessWidget {
                     fontSize: 20,
                   ),
                 ),
-                alignment: Alignment.topLeft,
+                alignment: Alignment.center,
               ),
               const SizedBox(height: 20),
               Container(
@@ -86,7 +91,7 @@ class DatosApiPages extends StatelessWidget {
                     fontSize: 20,
                   ),
                 ),
-                alignment: Alignment.topLeft,
+                alignment: Alignment.center,
               ),
               const SizedBox(height: 20),
               Container(
@@ -94,11 +99,11 @@ class DatosApiPages extends StatelessWidget {
                   apiController.films.description!,
                   style: const TextStyle(
                       color: Colors.black,
-                      fontWeight: FontWeight.normal,
+                      fontWeight: FontWeight.w300,
                       fontSize: 13,
                       fontStyle: FontStyle.italic),
                 ),
-                alignment: Alignment.topRight,
+                alignment: Alignment.center,
               ),
             ],
           ),
